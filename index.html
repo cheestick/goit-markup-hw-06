@@ -464,6 +464,49 @@
                   <use href="./images/svg/icons-sprite.svg#icon-close-x"></use>
             </svg>
           </button>
+          
+          <form action="" name="order-form" autocomplete="off" class="order-form">
+            <p class="order-form__text">Оставьте свои данные, мы вам перезвоним</p>
+            
+            <label  class="order-form__label">Имя
+            <div class="order-form__input-wrapper">
+              <input type="text" name="user-name" id="user-name" autofocus
+              class="order-form__input">
+              <svg class="order-form__input-icon">
+                <use href="./images/svg/icons-sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+            </label>
+
+
+            <label for="user-tel" class="order-form__label">Телефон</label>
+            <div class="order-form__input-wrapper">
+            <input type="text" name="user-tel" id="user-tel" class="order-form__input">
+             <svg class="order-form__input-icon">
+                <use href="./images/svg/icons-sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+            
+            <label for="user-email" class="order-form__label">Почта</label>
+            <div class="order-form__input-wrapper">
+              <input type="text" name="user-email" id="user-email" class="order-form__input">
+              <svg class="order-form__input-icon">
+                <use href="./images/svg/icons-sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label for="user-comment" class="order-form__label">Комментарий</label>
+            <textarea name="user-comment" id="user-comment"  
+              placeholder="Введите текст"
+             class="order-form__user-comment"></textarea>
+
+            <label class="order-form__user-policy">
+            <input type="checkbox" name="user-policy" class="form-order__is-policy" >
+            Соглашаюсь с рассылкой и принимаю <a href="" class="link-reset user-policy__link">Условия договора</a>
+            </label>
+                      
+            <button type="submit" class="btn order-form__submit">Отправить</button>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
