@@ -718,6 +718,8 @@ h3.overlay {
   box-sizing: border-box;
   border-radius: 4px;
 
+  cursor: pointer;
+
   transition: border-color var(--transition-default);
 }
 
@@ -781,6 +783,8 @@ h3.overlay {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 
 .order-form__submit:hover,
