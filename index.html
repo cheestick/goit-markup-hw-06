@@ -499,8 +499,14 @@
              class="order-form__user-comment"></textarea>
 
             <label class="order-form__user-policy">
-            <input type="checkbox" name="user-policy" class="form-order__is-policy" >
-            Соглашаюсь с рассылкой и принимаю <a href="" class="link-reset user-policy__link">Условия договора</a>
+            <input type="checkbox" name="user-policy" class="form-order__is-policy visually-hidden" >
+            <span>Соглашаюсь с рассылкой и принимаю</span> <a href="" class="link-reset user-policy__link">Условия договора</a>
+            <svg class="form-order__is-policy--unchecked">
+              <use href="./images/svg/icons-sprite.svg#icon-unchecked-checkbox"></use>
+            </svg> 
+            <svg class="form-order__is-policy--checked">
+              <use href="./images/svg/icons-sprite.svg#icon-checked-checkbox"></use>
+            </svg> 
             </label>
                       
             <button type="submit" class="btn order-form__submit">Отправить</button>

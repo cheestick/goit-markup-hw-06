@@ -751,11 +751,6 @@ h3.overlay {
   transition: fill var(--transition-default);
 }
 
-.order-form__user-policy {
-  margin-bottom: 30px;
-  padding-left: 12px;
-}
-
 .order-form__input:focus,
 .order-form__user-comment:focus {
   border-color: var(--interactive-element-color);
@@ -764,6 +759,38 @@ h3.overlay {
 
 .order-form__input:focus + .order-form__input-icon {
   fill: var(--interactive-element-color);
+}
+
+.order-form__user-policy {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.form-order__is-policy--unchecked,
+.form-order__is-policy--checked {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin-left: -24px;
+  width: 16px;
+  height: 15px;
+  opacity: 1;
+  transition: opacity var(--transition-default);
+}
+
+.form-order__is-policy--checked {
+  opacity: 0;
+}
+
+.form-order__is-policy:checked ~ .form-order__is-policy--unchecked {
+  opacity: 0;
+}
+
+.form-order__is-policy:checked ~ .form-order__is-policy--checked {
+  opacity: 1;
 }
 
 .user-policy__link,
