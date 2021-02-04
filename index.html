@@ -442,11 +442,15 @@
           </li>
           </ul>  
         </div>
-        <div class="join-contaier">
-          <p class="join-heading">Подпишитесь на рассылку</p>
-          <form action="">
-            <input type="email" name="email" placeholder="E-mail">
-            <button type="button" class="subscribe">Подписаться<span class="icon-plane"></span></button>
+        <div class="subscribe">
+          <p class="subscribe__text">Подпишитесь на рассылку</p>
+          <form action=""  class="subscribe__form">
+            <input type="email" name="email" placeholder="E-mail" class="subscribe__email">
+            <button type="button" class="btn subscribe__button">
+              Подписаться
+              <svg class="subscribe__icon">
+                <use href="./images/svg/icons-sprite.svg#icon-send"></use>
+              </svg></button>
           </form>
         </div>
       </div>
